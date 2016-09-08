@@ -38,8 +38,16 @@ module.exports = {
   		type: 'string',
   	},
 
+  	userName: {
+  		type: 'string',
+  		minLength: 3,
+  		regex: /^[a-zA-Z0-9]+$/
+  	},
+
   	password: {
   		type: 'string',
+  		required: true,
+  		regex: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/
   	},
 
   	active: {
