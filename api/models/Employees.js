@@ -32,10 +32,12 @@ module.exports = {
 
   	homePhone: {
   		type: 'string',
+  		regex: /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
   	},
 
   	cellPhone: {
   		type: 'string',
+  		regex: /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
   	},
 
   	userName: {
@@ -57,4 +59,3 @@ module.exports = {
   	}
   }
 };
-
