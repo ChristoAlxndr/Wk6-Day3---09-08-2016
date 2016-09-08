@@ -52,7 +52,7 @@ module.exports = {
 
   	active: {
   		type: 'integer',
-  		regex: /^[0-1]$/
+  		enum: [1,0]
   	}
   }
 };
