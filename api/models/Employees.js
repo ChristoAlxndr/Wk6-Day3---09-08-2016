@@ -52,7 +52,8 @@ module.exports = {
 
   	active: {
   		type: 'integer',
-  		enum: [1,0]
+  		enum: [1,0],
+  		required: true
   	}
   }
 };
