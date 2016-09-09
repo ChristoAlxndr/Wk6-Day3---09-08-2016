@@ -26,7 +26,6 @@ module.exports = {
   	email: {
   		type: 'string',
   		unique: true,
-  		required: false,
   		email: true
   	},
 
@@ -48,7 +47,6 @@ module.exports = {
 
   	password: {
   		type: 'string',
-  		required: true,
   		regex: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/
   	},
 
